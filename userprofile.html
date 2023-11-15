@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>User Profile</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;700&family=Nunito:wght@300;400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="CSS/bootstrap.min.css">
+        <link rel="stylesheet" href="CSS/style.css">
+    </head>
+    <body>
+        <!-- header section start  -->
+        <header class="header2">
+            <div class="overlay">
+            </div>
+            <!-- navbar section start  -->
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img src="imgs/logo1.png" alt="logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav left-list me-auto mb-2 mb-lg-0">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Home
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="index.html">Home1</a></li>
+                                    <li><a class="dropdown-item" href="index.html">Home2</a></li>
+                                    <li><a class="dropdown-item" href="index.html">Home3</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Movies
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="movielist.html">Movies Grid></a></li>
+                                    <li><a class="dropdown-item" href="movielist.html">Movies List</a></li>
+                                    <li><a class="dropdown-item" href="movielist.html">Movies single</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Celebrities
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="celebritylist.html">Celebrity Grid</a></li>
+                                    <li><a class="dropdown-item" href="celebritylist.html">Celebrity List</a></li>
+                                    <li><a class="dropdown-item" href="celebritylist.html">Celebrity Single</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                News
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="bloglist-grid.html">Blog list</a></li>
+                                    <li><a class="dropdown-item" href="bloglist-grid.html">Blog grid</a></li>
+                                    <li><a class="dropdown-item" href="bloglist-grid.html">Blog details</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Community
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="userprofile.html">User favorite grid</a></li>
+                                    <li><a class="dropdown-item" href="userprofile.html">User favorite list</a></li>
+                                    <li><a class="dropdown-item" href="userprofile.html">user profile</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="d-flex flex-row">
+                            <ul class="navbar-nav left-list me-auto mb-2 mb-lg-0">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Pages
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Landing</a></li>
+                                        <li><a class="dropdown-item" href="#">404 Page</a></li>
+                                        <li><a class="dropdown-item" href="#">Coming soon</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Help</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Log In</a>
+                                </li>
+                                <a class="btn sign-btn align-self-center" href="#">Sign Up</a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <section class="search ">
+                <div class="container">
+                    <div class="w-100 top-search d-md-flex flex-row position-relative d-sm-none ">
+                        <select class="search-select">
+                            <option value="TV show">TV show</option>
+                            <option value="Others">Others</option>
+                        </select>
+                        <input type="text" placeholder="Search for a movie, TV Show or celebrity that you are looking for">
+                        <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
+                    </div>
+                </div>
+            </section>
+            <!-- navbar section end  -->
+            <!-- header title section start  -->
+            <section class="header-title">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <h1 class="main-title">EDWARD KENNEDY’S PROFILE</h1>
+                            <nav class="d-flex flex-row justify-content-center align-items-start me-300" style="--bs-breadcrumb-divider: '>';color: #fff;" aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                <li class="breadcrumb-item me-2"><a href="index.html">Home</a></li>
+                                <li class="breadcrumb-item active text-start" aria-current="page">
+                                    <a class="ms-2" href="#">
+                                        PROFILE
+                                    </a>
+                                </li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </header>
+        <!-- header title section end  -->
+        <!-- main section start  -->
+        <main class="user-profile">
+            <div class="container">
+                <div class="row">
+                    <!-- user info sidebar start -->
+                    <aside class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                        <div class="user-info">
+                            <div class="user-img">
+                                <a href="#">
+                                    <img src="imgs/user-img.png" alt="">
+                                </a>
+                                <br>
+                                <a href="#" class="change-ava">Change avatar</a>
+                            </div>
+                            <div class="account-details">
+                                <p>Account Details</p>
+                                <ul>
+                                    <li class="active"><a href="#">Profile</a></li>
+                                    <li><a href="#">Favorite movies</a></li>
+                                    <li><a href="#">Rated movies</a></li>
+                                </ul>
+                            </div>
+                            <div class="account-details">
+                                <p>Others</p>
+                                <ul>
+                                    <li class="active"><a href="#">Profile</a></li>
+                                    <li><a href="#">CHANGE PASSWORD</a></li>
+                                    <li><a href="#">LOG OUT</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </aside>
+                    <!-- user info sidebar end -->
+                    <!-- change details section start  -->
+                    <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+                        <div class="change-details">
+                            <form action="#" method="get">
+                                <h4 class="section-title">01. Profile details</h4>
+                                <div class="row">
+                                    <div class="col-md-6 form">
+                                        <label>Username</label>
+                                        <input type="text" placeholder="edwardkennedy">
+                                    </div>
+                                    <div class="col-md-6 form">
+                                        <label>Email Address</label>
+                                        <input type="text" placeholder="edward@kennedy.com">
+                                    </div>
+                                    <div class="col-md-6 form">
+                                        <label>First Name</label>
+                                        <input type="text" placeholder="Edward ">
+                                    </div>
+                                    <div class="col-md-6 form">
+                                        <label>Last Name</label>
+                                        <input type="text" placeholder="Kennedy">
+                                    </div>
+                                    <div class="col-md-6 form">
+                                        <label>Country</label>
+                                        <select>
+                                            <option value="United States" selected>United States</option>
+                                            <option value="Others">Others</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6 form">
+                                        <label>State</label>
+                                        <select>
+                                            <option value="New York" selected>New York</option>
+                                            <option value="Others">Others</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-2 save-btn">
+                                        <input class="submit" type="submit" value="save">
+                                    </div>
+                                    <h4 class="section-title2">02. Change password</h4>
+                                    <div class="row">
+                                        <div class="col-md-6 form">
+                                            <label>Old Password</label>
+                                            <input type="text" placeholder="**********">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 form">
+                                            <label>New Password</label>
+                                            <input type="text" placeholder="***************">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 form">
+                                            <label>Confirm New Password</label>
+                                            <input type="text" placeholder="*************** ">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-2 save-btn">
+                                            <input class="submit" type="submit" value="change">
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- change details section end  -->
+                </div>
+            </div>
+        </main>
+        <!-- main section eend  -->
+        <footer class="main-footer">
+            <div class="container">
+                <div class="d-flex footer-items flex-lg-row flex-lg-nowrap flex-sm-column flex-sm-wrap align-items-start justify-content-between">
+                    <div class="footer-item1">
+                        <a href="index.html"><img class="logo" src="imgs/logo1.png" alt="logo"></a>
+                        <p class="footer-item1-address">5th Avenue st, manhattan<br>
+                        New York, NY 10001</p>
+                        <p class="footer-item1-address">Call us: <a href="#">(+01) 202 342 6789</a></p>
+                    </div>
+                    <div class="footer-item2">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="#">About</a></li> 
+                            <li><a href="#">Blockbuster</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Forums</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Help Center</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-item4">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="#">Terms of Use</a></li> 
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Security</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-item4">
+                        <h4>Account</h4>
+                        <ul>
+                            <li><a href="#">My Account</a></li> 
+                            <li><a href="#">Watchlist</a></li>
+                            <li><a href="#">Collections</a></li>
+                            <li><a href="#">User Guide</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-item5">
+                        <h4>Newsletter</h4>
+                        <p class="footer-item5-address">Subscribe to our newsletter system now
+                            <br>
+                            to get latest news from us.
+                        </p>
+                        <form action="#" method="get">
+                            <input type="text" placeholder="Enter your email...">
+                        </form>
+                        <a href="#" class="footer-btn">Subscribe now <i class="fa-solid fa-chevron-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <footer class="sub-footer">
+                <div class="copyright d-flex align-items-center justify-content-lg-between">
+                    <p class="copyright-info">© 2017 Blockbuster. All Rights Reserved. Designed by leehari.</p>
+                    <a href="#" class="back-top">Back to top  <i class="fa-solid fa-arrow-up"></i></a>
+                </div>
+            </footer>
+        </footer>
+        <!-- footer section end  -->
+
+
+
+        <script src="JS/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

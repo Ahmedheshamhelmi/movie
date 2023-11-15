@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Movie List</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;700&family=Nunito:wght@300;400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="CSS/bootstrap.min.css">
+        <link rel="stylesheet" href="CSS/style.css">
+    </head>
+    <body>
+        <!-- header section start  -->
+        <header class="header2">
+            <div class="overlay">
+            </div>
+            <!-- navbar section start  -->
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img src="imgs/logo1.png" alt="logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav left-list me-auto mb-2 mb-lg-0">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Home
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="index.html">Home1</a></li>
+                                    <li><a class="dropdown-item" href="index.html">Home2</a></li>
+                                    <li><a class="dropdown-item" href="index.html">Home3</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Movies
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="movielist.html">Movies Grid></a></li>
+                                    <li><a class="dropdown-item" href="movielist.html">Movies List</a></li>
+                                    <li><a class="dropdown-item" href="movielist.html">Movies single</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Celebrities
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="celebritylist.html">Celebrity Grid</a></li>
+                                    <li><a class="dropdown-item" href="celebritylist.html">Celebrity List</a></li>
+                                    <li><a class="dropdown-item" href="celebritylist.html">Celebrity Single</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                News
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="bloglist-grid.html">Blog list</a></li>
+                                    <li><a class="dropdown-item" href="bloglist-grid.html">Blog grid</a></li>
+                                    <li><a class="dropdown-item" href="bloglist-grid.html">Blog details</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Community
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="userprofile.html">User favorite grid</a></li>
+                                    <li><a class="dropdown-item" href="userprofile.html">User favorite list</a></li>
+                                    <li><a class="dropdown-item" href="userprofile.html">user profile</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="d-flex flex-row">
+                            <ul class="navbar-nav left-list me-auto mb-2 mb-lg-0">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Pages
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Landing</a></li>
+                                        <li><a class="dropdown-item" href="#">404 Page</a></li>
+                                        <li><a class="dropdown-item" href="#">Coming soon</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Help</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Log In</a>
+                                </li>
+                                <a class="btn sign-btn align-self-center" href="#">Sign Up</a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <section class="search ">
+                <div class="container">
+                    <div class="w-100 top-search d-md-flex flex-row position-relative d-sm-none ">
+                        <select class="search-select">
+                            <option value="TV show">TV show</option>
+                            <option value="Others">Others</option>
+                        </select>
+                        <input type="text" placeholder="Search for a movie, TV Show or celebrity that you are looking for">
+                        <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
+                    </div>
+                </div>
+            </section>
+            <!-- navbar section end  -->
+            <!-- header title section start  -->
+            <section class="header-title">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <h1 class="main-title"> movie listing - list</h1>
+                            <nav class="d-flex flex-row justify-content-center align-items-start" style="--bs-breadcrumb-divider: '>';color: #fff;" aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                <li class="breadcrumb-item me-2"><a href="index.html">Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">
+                                    <a class="ms-2" href="#">
+                                        MOVIE LISTING
+                                    </a>
+                                </li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </header>
+        <!-- header title section end  -->
+        <!-- main content section start  -->
+        <main class="main-content">
+            <section class="movie-list">
+                <div class="container">
+                    <div class="row">
+                        <!-- movies info section start  -->
+                        <div class="col-lg-8 col-md-12 col-sm-12">
+                            <div class="movies-info">
+                                <div class="movie-filter flex-row d-flex justify-content-between align-items-center">
+                                    <p class="numbers">Found <span>1,608 movies</span> in total</p>
+                                    <label class="sort-by">Sort by:</label>
+                                    <select class="sort-select">
+                                        <option value="popularity">Popularity Descending</option>
+                                        <option value="popularity">Popularity Ascending</option>
+                                        <option value="rating">Rating Descending</option>
+                                        <option value="rating">Rating Ascending</option>
+                                        <option value="date">Release date Descending</option>
+                                        <option value="date">Release date Ascending</option>
+                                    </select>
+                                    <a class="list" href="#">
+                                        <i class="fa-regular fa-rectangle-list"></i>
+                                    </a>
+                                    <a class="list2" href="#">
+                                        <i class="fa-solid fa-grip-vertical"></i>
+                                    </a>
+                                </div>
+                                <div class="movie-item d-flex align-items-center">
+                                    <img src="imgs/mv1.jpg" alt="movie-poster">
+                                    <div class="movie-item-info">
+                                        <h6 class="movie-title">
+                                            <a href="#">oblivion <span>(2012)</span></a>
+                                        </h6>
+                                        <p class="rating"><i class="fa-solid fa-star"></i><strong> 8.1</strong><span> /10</span></p>
+                                        <p class="movie-describ">Earth's mightiest heroes must come together and learn to fight as a team if they are to stop the mischievous Loki and his alien army from enslaving humanity...</p>
+                                        <p class="run-time"> Run Time: 2h21’    .     <span>MMPA: PG-13 </span>    .     <span>Release: 1 May 2015</span></p>
+                                        <p class="movie-director">Director: <a href="#" class="name">Joss Whedon</a></p>
+                                        <p class="movie-stars">Stars: <a href="#" class="name">Robert Downey Jr.,</a> <a href="#" class="name">Chris Evans,</a> <a href="#" class="name">  Chris Hemsworth</a></p>
+                                    </div>
+                                </div>
+                                <div class="movie-item d-flex align-items-center">
+                                    <img src="imgs/mv2.jpg" alt="movie-poster">
+                                    <div class="movie-item-info">
+                                        <h6 class="movie-title">
+                                            <a href="#">INTO THE WILD <span>(2014)</span></a>
+                                        </h6>
+                                        <p class="rating"><i class="fa-solid fa-star"></i><strong> 7.8</strong><span> /10</span></p>
+                                        <p class="movie-describ">As Steve Rogers struggles to embrace his role in the modern world, he teams up with a fellow Avenger and S.H.I.E.L.D agent, Black Widow, to battle a new threat...</p>
+                                        <p class="run-time"> Run Time: 2h21’    .     <span>MMPA: PG-13 </span>    .     <span>Release: 1 May 2015</span></p>
+                                        <p class="movie-director">Director: <a href="#" class="name">Anthony Russo,Joe Russo</a></p>
+                                        <p class="movie-stars">Stars: <a href="#" class="name">Chris Evans,</a> <a href="#" class="name"> Samuel L. Jackson,</a> <a href="#" class="name">  Scarlett Johansson</a></p>
+                                    </div>
+                                </div>
+                                <div class="movie-item d-flex align-items-center">
+                                    <img src="imgs/mv3.jpg" alt="movie-poster">
+                                    <div class="movie-item-info">
+                                        <h6 class="movie-title">
+                                            <a href="#">BLADE RUNNER <span>(2014)</span></a>
+                                        </h6>
+                                        <p class="rating"><i class="fa-solid fa-star"></i><strong> 7.3</strong><span> /10</span></p>
+                                        <p class="movie-describ">Armed with a super-suit with the astonishing ability to shrink in scale but increase in strength, cat burglar Scott Lang must embrace his inner hero and help...</p>
+                                        <p class="run-time"> Run Time: 2h21’    .     <span>MMPA: PG-13 </span>    .     <span>Release: 1 May 2015</span></p>
+                                        <p class="movie-director">Director: <a href="#" class="name">Peyton Reed</a></p>
+                                        <p class="movie-stars">Stars: <a href="#" class="name">Paul Rudd,</a> <a href="#" class="name"> Michael Douglas</a></p>
+                                    </div>
+                                </div>
+                                <div class="movie-item d-flex align-items-center">
+                                    <img src="imgs/mv4.jpg" alt="movie-poster">
+                                    <div class="movie-item-info">
+                                        <h6 class="movie-title">
+                                            <a href="#">MULHOLLAND PRIDE <span>(2013)</span></a>
+                                        </h6>
+                                        <p class="rating"><i class="fa-solid fa-star"></i><strong> 7.2</strong><span> /10</span></p>
+                                        <p class="movie-describ">When Tony Stark's world is torn apart by a formidable terrorist called the Mandarin, he starts an odyssey of rebuilding and retribution.</p>
+                                        <p class="run-time"> Run Time: 2h21’    .     <span>MMPA: PG-13 </span>    .     <span>Release: 1 May 2015</span></p>
+                                        <p class="movie-director">Director: <a href="#" class="name">Shane Black</a></p>
+                                        <p class="movie-stars">Stars: <a href="#" class="name">Robert Downey Jr,</a> <a href="#" class="name"> Guy Pearce,</a> <a href="#" class="name"> Don Cheadle</a></p>
+                                    </div>
+                                </div>
+                                <div class="movie-item d-flex align-items-center">
+                                    <img src="imgs/mv5.jpg" alt="movie-poster">
+                                    <div class="movie-item-info">
+                                        <h6 class="movie-title">
+                                            <a href="#">SKYFALL: EVIL OF BOSS <span>(2013)</span></a>
+                                        </h6>
+                                        <p class="rating"><i class="fa-solid fa-star"></i><strong> 7.0</strong><span> /10</span></p>
+                                        <p class="movie-describ">When Tony Stark's world is torn apart by a formidable terrorist called the Mandarin, he starts an odyssey of rebuilding and retribution.</p>
+                                        <p class="run-time"> Run Time: 2h21’    .     <span>MMPA: PG-13 </span>    .     <span>Release: 1 May 2015</span></p>
+                                        <p class="movie-director">Director: <a href="#" class="name">Alan Taylor</a></p>
+                                        <p class="movie-stars">Stars: <a href="#" class="name">Chris Hemsworth,</a> <a href="#" class="name"> Natalie Portman,</a> <a href="#" class="name"> Tom Hiddleston</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- movies info section end  -->
+                        <!-- search for movie sidebar start  -->
+                        <div class="col-lg-4 col-md-12 col-sm-12">
+                            <div class="d-lg-flex justify-content-end ">
+                                <div class="search-movie">
+                                    <h4 class="search-movie-title">
+                                        SEARCH FOR MOVIE
+                                    </h4>
+                                    <form class="search-form" action="#" method="get">
+                                        <div class="row">
+                                            <div class="col-12 form-item">
+                                                <label class="search-label">Movie name</label>
+                                                <input class="search-input" type="text" placeholder="Enter keywords">
+                                            </div>
+                                            <div class="col-12 form-item">
+                                                <label class="search-label">Genres &amp; Subgenres</label>
+                                                <select class="form-select search-input" aria-label="Default select example">
+                                                    <option selected disabled>Enter to filter genres</option>
+                                                    <option value="1">Action 1</option>
+                                                    <option value="2">Action 2</option>
+                                                    <option value="3">Action 3</option>
+                                                    <option value="4">Action 4</option>
+                                                    <option value="5">Action 5</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-12 form-item">
+                                                <label class="search-label">Rating Range</label>
+                                                <select class="form-select search-input" aria-label="Default select example">
+                                                    <option selected disabled>Rating Range</option>
+                                                    <option value="1">-- Select the rating range below --</option>
+                                                    <option value="2">-- Select the rating range below --</option>
+                                                    <option value="3">-- Select the rating range below --</option>
+                                                    <option value="4">-- Select the rating range below --</option>
+                                                    <option value="5">-- Select the rating range below --</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-12 form-item">
+                                                <label class="search-label">Release Year</label>
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <select class="form-select search-input" aria-label="Default select example">
+                                                            <option value="range" selected disabled>From</option>
+                                                            <option value="10">10</option>
+                                                            <option value="20">20</option>
+                                                            <option value="30">30</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <select class="form-select search-input" aria-label="Default select example">
+                                                            <option value="range" selected disabled>To</option>
+                                                            <option value="20">20</option>
+                                                            <option value="30">30</option>
+                                                            <option value="40">40</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 form-item m-0">
+                                                <input class="search-submit" type="submit" value="submit">
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <h4 class="find-us-title find-fb">
+                                        FIND US ON FACEBOOK
+                                    </h4>
+                                    <h4 class="find-us-title ">
+                                        Tweet to us
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- search for movie sidebar end  -->
+                </div>
+            </section>
+        </main>
+        <!-- main content section end  -->
+        <!-- footer section start  -->
+        <footer class="main-footer">
+            <div class="container">
+                <div class="d-flex footer-items flex-lg-row flex-lg-nowrap flex-sm-column flex-sm-wrap align-items-start justify-content-between">
+                    <div class="footer-item1">
+                        <a href="index.html"><img class="logo" src="imgs/logo1.png" alt="logo"></a>
+                        <p class="footer-item1-address">5th Avenue st, manhattan<br>
+                        New York, NY 10001</p>
+                        <p class="footer-item1-address">Call us: <a href="#">(+01) 202 342 6789</a></p>
+                    </div>
+                    <div class="footer-item2">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="#">About</a></li> 
+                            <li><a href="#">Blockbuster</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Forums</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Help Center</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-item4">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="#">Terms of Use</a></li> 
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Security</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-item4">
+                        <h4>Account</h4>
+                        <ul>
+                            <li><a href="#">My Account</a></li> 
+                            <li><a href="#">Watchlist</a></li>
+                            <li><a href="#">Collections</a></li>
+                            <li><a href="#">User Guide</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-item5">
+                        <h4>Newsletter</h4>
+                        <p class="footer-item5-address">Subscribe to our newsletter system now
+                            <br>
+                            to get latest news from us.
+                        </p>
+                        <form action="#" method="get">
+                            <input type="text" placeholder="Enter your email...">
+                        </form>
+                        <a href="#" class="footer-btn">Subscribe now <i class="fa-solid fa-chevron-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <footer class="sub-footer">
+                <div class="copyright d-flex align-items-center justify-content-lg-between">
+                    <p class="copyright-info">© 2017 Blockbuster. All Rights Reserved. Designed by leehari.</p>
+                    <a href="#" class="back-top">Back to top  <i class="fa-solid fa-arrow-up"></i></a>
+                </div>
+            </footer>
+        </footer>
+        <!-- footer section end  -->
+        
+        <script src="JS/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

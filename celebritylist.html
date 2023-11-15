@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Celebrity List</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;700&family=Nunito:wght@300;400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="CSS/bootstrap.min.css">
+        <link rel="stylesheet" href="CSS/style.css">
+    </head>
+    <body>
+        <!-- header section start  -->
+        <header class="header2">
+            <div class="overlay">
+            </div>
+            <!-- navbar section start  -->
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img src="imgs/logo1.png" alt="logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav left-list me-auto mb-2 mb-lg-0">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Home
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="index.html">Home1</a></li>
+                                    <li><a class="dropdown-item" href="index.html">Home2</a></li>
+                                    <li><a class="dropdown-item" href="index.html">Home3</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Movies
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="movielist.html">Movies Grid></a></li>
+                                    <li><a class="dropdown-item" href="movielist.html">Movies List</a></li>
+                                    <li><a class="dropdown-item" href="movielist.html">Movies single</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Celebrities
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="celebritylist.html">Celebrity Grid</a></li>
+                                    <li><a class="dropdown-item" href="celebritylist.html">Celebrity List</a></li>
+                                    <li><a class="dropdown-item" href="celebritylist.html">Celebrity Single</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                News
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="bloglist-grid.html">Blog list</a></li>
+                                    <li><a class="dropdown-item" href="bloglist-grid.html">Blog grid</a></li>
+                                    <li><a class="dropdown-item" href="bloglist-grid.html">Blog details</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Community
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="userprofile.html">User favorite grid</a></li>
+                                    <li><a class="dropdown-item" href="userprofile.html">User favorite list</a></li>
+                                    <li><a class="dropdown-item" href="userprofile.html">user profile</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="d-flex flex-row">
+                            <ul class="navbar-nav left-list me-auto mb-2 mb-lg-0">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Pages
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Landing</a></li>
+                                        <li><a class="dropdown-item" href="#">404 Page</a></li>
+                                        <li><a class="dropdown-item" href="#">Coming soon</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Help</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Log In</a>
+                                </li>
+                                <a class="btn sign-btn align-self-center" href="#">Sign Up</a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <section class="search ">
+                <div class="container">
+                    <div class="w-100 top-search d-md-flex flex-row position-relative d-sm-none ">
+                        <select class="search-select">
+                            <option value="TV show">TV show</option>
+                            <option value="Others">Others</option>
+                        </select>
+                        <input type="text" placeholder="Search for a movie, TV Show or celebrity that you are looking for">
+                        <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
+                    </div>
+                </div>
+            </section>
+            <!-- navbar section end  -->
+            <!-- header title section start  -->
+            <section class="header-title">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <h1 class="main-title"> CELEBRITY LISTING - list</h1>
+                            <nav class="d-flex flex-row justify-content-center align-items-start" style="--bs-breadcrumb-divider: '>';color: #fff;" aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                <li class="breadcrumb-item me-2"><a href="index.html">Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">
+                                    <a class="ms-2" href="#">
+                                        CELEBRITY LISTING
+                                    </a>
+                                </li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </header>
+        <!-- header title section end  -->
+        <!-- main content section start  -->
+        <main class="main-content">
+            <section class="movie-list">
+                <div class="container">
+                    <div class="row">
+                        <!-- movies info section start  -->
+                        <div class="col-lg-9 col-md-12 col-sm-12">
+                            <div class="movies-info">
+                                <div class="movie-filter flex-row d-flex justify-content-between align-items-center">
+                                    <p class="numbers">Found <span>1,608 movies</span> in total</p>
+                                    <label class="sort-by">Sort by:</label>
+                                    <select class="sort-select">
+                                        <option value="popularity">Popularity Descending</option>
+                                        <option value="popularity">Popularity Ascending</option>
+                                        <option value="rating">Rating Descending</option>
+                                        <option value="rating">Rating Ascending</option>
+                                        <option value="date">Release date Descending</option>
+                                        <option value="date">Release date Ascending</option>
+                                    </select>
+                                    <a class="list" href="#">
+                                        <i class="fa-regular fa-rectangle-list"></i>
+                                    </a>
+                                    <a class="list2" href="#">
+                                        <i class="fa-solid fa-grip-vertical"></i>
+                                    </a>
+                                </div>
+                                <div class="celebrity-item d-flex align-items-stretch">
+                                    <img src="imgs/ceblist1.jpg" alt="movie-poster">
+                                    <div class="celebrity-item-info">
+                                        <h2 class="m-0">
+                                            <a href="#">Dan Stevens</a>
+                                        </h2>
+                                        <span class="origin">actor, usa</span>
+                                        <p class="actor-details">Dan Stevens was born at Croydon in Surrey on 10th October 1982. His parents are teachers. He was educated at Tonbridge School and trained in acting at the National Youth Theatre of Great Britain... </p>
+                                    </div>
+                                </div>
+                                <div class="celebrity-item d-flex align-items-stretch">
+                                    <img src="imgs/ceblist2.jpg" alt="movie-poster">
+                                    <div class="celebrity-item-info">
+                                        <h2 class="m-0">
+                                            <a href="#">Luke Evans</a>
+                                        </h2>
+                                        <span class="origin">ACTOR, MEXICO</span>
+                                        <p class="actor-details">Luke George Evans was born in Pontypool, Wales, and grew up in Aberbargoed, in the south of Wales. He is the son of Yvonne (Lewis) and David Evans. He moved to Cardiff at the age 17...</p>
+                                    </div>
+                                </div>
+                                <div class="celebrity-item d-flex align-items-stretch">
+                                    <img src="imgs/ceblist3.jpg" alt="movie-poster">
+                                    <div class="celebrity-item-info">
+                                        <h2 class="m-0">
+                                            <a href="#">Scarlett Johansson</a>
+                                        </h2>
+                                        <span class="origin">ACTRESS, FRANCE</span>
+                                        <p class="actor-details">Scarlett Ingrid Johansson was born in New York City. Her mother, Melanie Sloan, is from a Jewish family from the Bronx, and her father, Karsten Johansson, is a Danish-born architect, from Copenhagen...</p>
+                                    </div>
+                                </div>
+                                <div class="celebrity-item d-flex align-items-stretch">
+                                    <img src="imgs/ceblist4.jpg" alt="movie-poster">
+                                    <div class="celebrity-item-info">
+                                        <h2 class="m-0">
+                                            <a href="#">Emma Watson</a>
+                                        </h2>
+                                        <span class="origin">ACTRESS, UK</span>
+                                        <p class="actor-details">Emma Charlotte Duerre Watson was born in Paris, France, to English parents, Jacqueline Luesby and Chris Watson, both lawyers. She moved to Oxfordshire when she was five...</p>
+                                    </div>
+                                </div>
+                                <div class="celebrity-item d-flex align-items-stretch">
+                                    <img src="imgs/ceblist5.jpg" alt="movie-poster">
+                                    <div class="celebrity-item-info">
+                                        <h2 class="m-0">
+                                            <a href="#">Tom Hardy</a>
+                                        </h2>
+                                        <span class="origin">ACTOR, ITALY</span>
+                                        <p class="actor-details">Joan Crawford was born Lucille Fay LeSueur on March 23, 1905, in San Antonio, Texas, to Anna Belle (Johnson) and Thomas E. LeSueur, a laundry laborer. By the time she was born her parents had separated....</p>
+                                    </div>
+                                </div>
+                                <div class="celebrity-item d-flex align-items-stretch">
+                                    <img src="imgs/ceblist6.jpg" alt="movie-poster">
+                                    <div class="celebrity-item-info">
+                                        <h2 class="m-0">
+                                            <a href="#">Joan Crawford</a>
+                                        </h2>
+                                        <span class="origin">DIRECTOR, SWEDEN</span>
+                                        <p class="actor-details">Joan Crawford was born Lucille Fay LeSueur on March 23, 1905, in San Antonio, Texas, to Anna Belle (Johnson) and Thomas E. LeSueur, a laundry laborer. By the time she was born her parents had separated....</p>
+                                    </div>
+                                </div>
+                                <div class="celebrity-item d-flex align-items-stretch">
+                                    <img src="imgs/ceblist7.jpg" alt="movie-poster">
+                                    <div class="celebrity-item-info">
+                                        <h2 class="m-0">
+                                            <a href="#">Margot Robbie</a>
+                                        </h2>
+                                        <span class="origin">ACTRESS, CHILE</span>
+                                        <p class="actor-details">Margot Robbie is an Australian actress born in Dalby, Queensland, and raised on the Gold Coast, spending much of her time at the farm belonging to her grandparents. Her mother, Sarie Kessler, is a physiotherapist....</p>
+                                    </div>
+                                </div>
+                                <div class="celebrity-item d-flex align-items-stretch">
+                                    <img src="imgs/ceblist8.jpg" alt="movie-poster">
+                                    <div class="celebrity-item-info">
+                                        <h2 class="m-0">
+                                            <a href="#">Jason Momoa</a>
+                                        </h2>
+                                        <span class="origin">ACTOR, USA</span>
+                                        <p class="actor-details">Joseph Jason Namakaeha Momoa was born on August 1, 1979 in Honolulu, Hawaii. He is the son of Coni (Lemke), a photographer, and Joseph Momoa, a painter...</p>
+                                    </div>
+                                </div>
+                                <div class="movie-filter flex-row d-flex justify-content-between align-items-center">
+                                    <p class="numbers p-0">Reviews per page:</p>
+                                    <select class="sort-select">
+                                        <option value="popularity">36 Reviews</option>
+                                        <option value="popularity">18 Reviews</option>
+                                    </select>
+                                    <div class="pagination2">
+                                        <span class="numbers p-0 me-3">Page 1 of 6:</span>
+                                        <a class="active page" href="#">1</a>
+                                        <a class="page" href="#">2</a>
+                                        <a class="page" href="#">3</a>
+                                        <a class="page" href="#">4</a>
+                                        <a class="page" href="#">5</a>
+                                        <a class="page" href="#">6</a>
+                                        <a class="page" href="#"><i class="fa-solid fa-chevron-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- movies info section end  -->
+                        <!-- search for movie sidebar start  -->
+                        <div class="col-lg-3 col-md-12 col-sm-12">
+                            <div class="actor-form d-lg-flex justify-content-end ">
+                                <div class="search-movie">
+                                    <h4 class="search-movie-title">
+                                        SEARCH CELEBRITY
+                                    </h4>
+                                    <form class="search-form p-0 border-0 bg-transparent" action="#" method="get">
+                                        <div class="row">
+                                            <div class="col-12 form-item">
+                                                <label class="search-label">Celebrity name</label>
+                                                <input class="search-input" type="text" placeholder="Enter keywords">
+                                            </div>
+                                            <div class="col-12 form-item">
+                                                <label class="search-label">Celebrity Letter</label>
+                                                <select class="form-select search-input" aria-label="Default select example">
+                                                    <option value="A" selected>A</option>
+                                                    <option value="B">B</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-12 form-item">
+                                                <label class="search-label">Category</label>
+                                                <select class="form-select search-input" aria-label="Default select example">
+                                                    <option value="Actress" selected>Actress</option>
+                                                    <option value="Others">Others</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-12 form-item">
+                                                <label class="search-label">Year of birth</label>
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <select class="form-select search-input" aria-label="Default select example">
+                                                            <option value="1970" selected>1970</option>
+                                                            <option value="Others">Others</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <select class="form-select search-input" aria-label="Default select example">
+                                                            <option value="1990">1990</option>
+                                                            <option value="Others">Others</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 form-item m-0">
+                                                <input class="search-submit" type="submit" value="submit">
+                                            </div>
+                                            <div class="col-12 spotlight">
+                                                <h4 class="spotlight-title">
+                                                    SPOTLIGHT CELEBRITIES
+                                                </h4>
+                                                <div class="actor d-flex">
+                                                    <a class="actor-img" href="#">
+                                                        <img src="imgs/ava1.jpg" alt="actor">
+                                                    </a>
+                                                    <div class="actor-info ">
+                                                        <h6 class="m-0">
+                                                            <a href="#">
+                                                                Samuel N. Jack
+                                                            </a>
+                                                        </h6>
+                                                        <span>Actor</span>
+                                                    </div>
+                                                </div>
+                                                <div class="actor d-flex">
+                                                    <a class="actor-img" href="#">
+                                                        <img src="imgs/ava2.jpg" alt="actor">
+                                                    </a>
+                                                    <div class="actor-info ">
+                                                        <h6 class="m-0">
+                                                            <a href="#">
+                                                                Benjamin Carroll
+                                                            </a>
+                                                        </h6>
+                                                        <span>Actor</span>
+                                                    </div>
+                                                </div>
+                                                <div class="actor d-flex">
+                                                    <a class="actor-img" href="#">
+                                                        <img src="imgs/ava3.jpg" alt="actor">
+                                                    </a>
+                                                    <div class="actor-info ">
+                                                        <h6 class="m-0">
+                                                            <a href="#">
+                                                                Beverly Griffin
+                                                            </a>
+                                                        </h6>
+                                                        <span>Actor</span>
+                                                    </div>
+                                                </div>
+                                                <div class="actor d-flex">
+                                                    <a class="actor-img" href="#">
+                                                        <img src="imgs/ava4.jpg" alt="actor">
+                                                    </a>
+                                                    <div class="actor-info ">
+                                                        <h6 class="m-0">
+                                                            <a href="#">
+                                                                Justin Weaver
+                                                            </a>
+                                                        </h6>
+                                                        <span>Actor</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- search for movie sidebar end  -->
+                </div>
+            </section>
+        </main>
+        <!-- main content section end  -->
+        <!-- footer section start  -->
+        <footer class="main-footer">
+            <div class="container">
+                <div class="d-flex footer-items flex-lg-row flex-lg-nowrap flex-sm-column flex-sm-wrap align-items-start justify-content-between">
+                    <div class="footer-item1">
+                        <a href="index.html"><img class="logo" src="imgs/logo1.png" alt="logo"></a>
+                        <p class="footer-item1-address">5th Avenue st, manhattan<br>
+                        New York, NY 10001</p>
+                        <p class="footer-item1-address">Call us: <a href="#">(+01) 202 342 6789</a></p>
+                    </div>
+                    <div class="footer-item2">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="#">About</a></li> 
+                            <li><a href="#">Blockbuster</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Forums</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Help Center</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-item4">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="#">Terms of Use</a></li> 
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Security</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-item4">
+                        <h4>Account</h4>
+                        <ul>
+                            <li><a href="#">My Account</a></li> 
+                            <li><a href="#">Watchlist</a></li>
+                            <li><a href="#">Collections</a></li>
+                            <li><a href="#">User Guide</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-item5">
+                        <h4>Newsletter</h4>
+                        <p class="footer-item5-address">Subscribe to our newsletter system now
+                            <br>
+                            to get latest news from us.
+                        </p>
+                        <form action="#" method="get">
+                            <input type="text" placeholder="Enter your email...">
+                        </form>
+                        <a href="#" class="footer-btn">Subscribe now <i class="fa-solid fa-chevron-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <footer class="sub-footer">
+                <div class="copyright d-flex align-items-center justify-content-lg-between">
+                    <p class="copyright-info">© 2017 Blockbuster. All Rights Reserved. Designed by leehari.</p>
+                    <a href="#" class="back-top">Back to top  <i class="fa-solid fa-arrow-up"></i></a>
+                </div>
+            </footer>
+        </footer>
+        <!-- footer section end  -->
+
+
+
+        <script src="JS/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
